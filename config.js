@@ -6,9 +6,10 @@ const SITE_CONFIG = {
     siteName: "Jin Chai's Website",
     siteTitle: "Jin Chai's Website",
     siteSubtitle: "欢迎来到柴琎的个人主页——",
-    siteIntro: `&emsp;&emsp;<b>我是柴琎，一名来自中国科学技术大学工程科学学院仪器科学与技术（机器人方向）博士研究生，隶属于中国科学技术大学工程科学学院精密机械与精密仪器系、人形机器人研究院、深空探测实验室。研究方向为人形机器人（仿人灵巧手）、灵巧操作、仿生软体机器人与人工肌肉.</b><br>
+    siteIntro: `&emsp;&emsp;<b>我是柴琎，一名来自中国科学技术大学工程科学学院仪器科学与技术（机器人方向）博士研究生，隶属于中国科学技术大学工程科学学院精密机械与精密仪器系、人形机器人研究院、深空探测实验室，所在实验室为中国科大仿生智能实验室BIR-Lab，导师为董二宝副教授。研究方向为人形机器人（仿人灵巧手）、灵巧操作、仿生软体机器人与人工肌肉。</b><br>
                 &emsp;&emsp;本网站用于记录我的科研、学习与生活，欢迎交流！`,
     papers: [
+        "<b>Chai J.</b>, Yao X., Hou M., Li Y., et. al. “<b>A 21-DOF Humanoid Dexterous Hand with Hybrid SMA-Motor Actuation: CYJ Hand-0</b>”, arXiv:2507.14538. https://doi.org/10.48550/arXiv.2507.14538",
         "<b>Chai J.</b>, Li Y., et. al. “<b>Customize-Your-Joy Hand A user-oriented, cost-effective 22-DOF platform for future human-robot community</b>”[J], in <b>IEEE Robotics and Automation Letters</b>, 2025. (二审在投)",
         "Li J., <b>Chai J.</b>, et. al. “A Universal SMA Actuator Enabled by Ultrasonic Welding and an Integrated Drive-Sense-Control System”[J], in Smart Materials and Structures , 2025. (一审在投)",
         "Hou M., <b>Chai J.</b>, et. al. “Design of a High Power-to-Weight Ratio Gripper Driven by SMA Artificial Muscles”[J], in Smart Materials and Structures , 2025. (在投)",
@@ -25,7 +26,7 @@ const SITE_CONFIG = {
         email: "houzhouhuanghzu@mail.ustc.edu.cn",
         avatar: "head.jpg",
         title: "博士研究生 | 工程科学学院 | 仪器科学与技术（机器人方向）",
-        description: "我是一名来自中国科学技术大学工程科学学院仪器科学与技术（机器人方向）博士研究生。",
+        description: "我是一名来自中国科学技术大学工程科学学院仪器科学与技术（机器人方向）博士研究生，隶属于中国科学技术大学工程科学学院精密机械与精密仪器系、人形机器人研究院、深空探测实验室，所在实验室为中国科大仿生智能实验室BIR-Lab，导师为董二宝副教授。研究方向为人形机器人（仿人灵巧手）、灵巧操作、仿生软体机器人与人工肌肉。",
         affiliation: "中国科学技术大学工程科学学院精密机械与精密仪器系、人形机器人研究院、深空探测实验室",
         research: [
             "<b>人形机器人（仿人灵巧手）<b>",
