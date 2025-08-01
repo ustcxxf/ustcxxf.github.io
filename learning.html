@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>学习库 - 我的个人网站</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Jin Chai's Website</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">主页</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">个人简介</a></li>
+                <li class="nav-item"><a href="work.html" class="nav-link">工作内容</a></li>
+                <li class="nav-item"><a href="learning.html" class="nav-link">学习库</a></li>
+                <li class="nav-item"><a href="notes.html" class="nav-link">杂记</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">联系我</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="learning" class="learning" style="margin-top:80px;">
+        <div class="container">
+            <h2 class="section-title">学习库</h2>
+            <div class="learning-categories" id="learningCategoriesContainer">
+                <!-- 分类卡片由JS动态渲染 -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jin Chai的个人网站. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 这是你给的学习库分类配置
+        const learningCategories = [
+            { icon: "fas fa-cogs", title: "机械", items: [] },
+            { icon: "fas fa-bolt", title: "电机", items: [] },
+            { icon: "fas fa-microchip", title: "电路设计", items: [] },
+            { icon: "fas fa-microchip", title: "单片机", items: [] },
+            { icon: "fas fa-desktop", title: "计算机", items: [] },
+            { icon: "fas fa-robot", title: "机器人学", items: [] },
+            { icon: "fas fa-sync", title: "控制", items: [] },
+            { icon: "fas fa-project-diagram", title: "算法", items: [] },
+            { icon: "fas fa-code", title: "编程", items: [] },
+            { icon: "fas fa-book", title: "基础学科", items: [] },
+            { icon: "fas fa-pen-nib", title: "论文写作", items: [] }
+        ];
+
+        // 渲染函数
+        function renderLearningCategories() {
+            const container = document.getElementById('learningCategoriesContainer');
+            container.innerHTML = '';
+            learningCategories.forEach(category => {
+                const card = document.createElement('div');
+                card.className = 'category-card';
+
+                const title = document.createElement('h3');
+                title.innerHTML = `<i class="${category.icon}"></i> ${category.title}`;
+                card.appendChild(title);
+
+                const ul = document.createElement('ul');
+                if (category.items.length > 0) {
+                    category.items.forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        ul.appendChild(li);
+                    });
+                } else {
+                    // 如果没有子项，可以显示“暂无内容”或保持空白
+                    const li = document.createElement('li');
+                    li.textContent = '暂无内容';
+                    ul.appendChild(li);
+                }
+                card.appendChild(ul);
+
+                container.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', renderLearningCategories);
+    </script>
+</body>
+</html>

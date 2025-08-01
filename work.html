@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作内容 - 我的个人网站</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Jin Chai's Website</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">主页</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">个人简介</a></li>
+                <li class="nav-item"><a href="work.html" class="nav-link">工作内容</a></li>
+                <li class="nav-item"><a href="learning.html" class="nav-link">学习库</a></li>
+                <li class="nav-item"><a href="notes.html" class="nav-link">杂记</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">联系我</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="work" class="work" style="margin-top:80px;">
+        <div class="container">
+            <h2 class="section-title">工作内容</h2>
+            <div class="work-grid">
+
+                <div class="work-card">
+                    <div class="work-icon"><i class="fas fa-hand-paper"></i></div>
+                    <h3>高自由度仿人灵巧手</h3>
+                    <p>本人独立主导研发，提出了一种创新的22自由度（DOF）仿人灵巧手。该灵巧手结构布局与人手高度一致，重量仅153克，模块化设计不仅支持个性化定制，还简化了装配、维护与功能扩展；采用灵感源自达芬奇机械学的可控耦合肌腱驱动机制，支持肌腱布局及驱动器类型、数量的灵活调整；通过3D打印技术与低成本商用材料实现，单只手（不包括驱动部分）硬件成本低于60美元；在Kapandji Test和GRASP taxonomy中均实现了100%的关键性能指标，具有优异的灵活性与动作能力。</p>
+                    <ul>
+                        <li>仿人灵巧手本体结构设计开发，3D建模，版本优化与迭代（15个版本，目前仍在迭代更新）；</li>
+                        <li>仿人灵巧手外置式绳驱传动系统的研发，开发创新的传动方案和绳驱肌腱安装方案；</li>
+                        <li>开发驱动集成臂及SMA-电机/舵机混合系统，嵌入式驱控系统搭建；</li>
+                        <li>完成机械零部件加工、电路系统搭建与整机装配调试。</li>
+                    </ul>
+                    <ul>
+                        <li>第一代原型机作为本科毕设，获得校级优秀论文奖、全国优秀毕业设计奖、安徽省机器人学会优秀论文奖，被推荐参加全国大学生机器人科技创新营；</li>
+                        <li>第二代原型机（CYJ Hand）论文“Customize-Your-Joy Hand A user-oriented, cost-effective 22-DOF platform for future human-robot community” IEEE Robotics & Automation在投（二审阶段），专利申请中（学生第一申请人）。</li>
+                    </ul>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-icon"><i class="fas fa-robot"></i></div>
+                    <h3>基于形状记忆合金等功能材料开发的驱动器（人工肌肉）</h3>
+                    <p>基于形状记忆合金等功能材料功重比高、爆发力强、噪音低等优势，开发多种适用于仿生机器人的新型驱动器及控制系统。</p>
+                    <ul>
+                        <li>参与研发单/双向弯曲的软体驱动模块（平滑肌），提出标准化制造方案，设计驱动-感知-控制一体化电路模块，开发PID控制算法；</li>
+                        <li>主导开发平行四边形行程放大驱动模块（骨骼肌），用于放大位移并开发折纸型可重构模块与压电驱动器模块；</li>
+                        <li>开发的成果应用于仿生鱼、水母、软体手、尺蠖机器人、双指夹爪等，相关专利正在撰写。</li>
+                    </ul>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-icon"><i class="fas fa-robot"></i></div>
+                    <h3>基于人机交互的新型配网带电作业机器人控制系统设计</h3>
+                    <p>搭建了基于先进人机交互技术的控制系统，用于操作高度拟人化的配网带电作业机器人。本人仿人灵巧手原型机为该课题子项目成果之一。</p>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-icon"><i class="fas fa-robot"></i></div>
+                    <h3>“通臂”灵猴机器人——人机协作的智能远程特种作业系统</h3>
+                    <p>参与撰写项目申请书（市场分析、核心技术、知识产权、商业模式、财务分析等），协助团队完成手臂协作机器人优化升级与供应链设计。项目获得70万元资助，成果在多项省市级双创比赛中展示。</p>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-icon"><i class="fas fa-hand-paper"></i></div>
+                    <h3>基于 one-shot 演示学习与深度强化学习的抓取算法研究</h3>
+                    <p>解决多指灵巧手抓取任意物体问题，基于 CoppeliaSim 建模，提出面向通用物体的课程学习算法，支持只需一次演示即可泛化。成果已发表在 RAL 期刊。</p>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-icon"><i class="fas fa-robot"></i></div>
+                    <h3>基于深度强化学习的变阻抗控制算法</h3>
+                    <p>提出基于深度强化学习（DRL）的可变阻抗控制策略，适用于复杂环境下机器人的力控制，并基于 Lyapunov 理论证明其稳定性。成果已发表在 RAL 期刊。</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jin Chai的个人网站. 保留所有权利.</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
