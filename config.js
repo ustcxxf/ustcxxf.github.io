@@ -4,7 +4,7 @@
 const SITE_CONFIG = {
     // 基本信息
     siteName: "Jin Chai's Website",
-    siteTitle: "Jin Chai's Website",
+    siteTitle: "Jin Chai's Website",                                                                                                                                                                                                                                                                                                                                                                                        
     siteSubtitle: "欢迎来到柴琎的个人主页——",
     siteIntro: `&emsp;&emsp;<b>我是柴琎，一名来自中国科学技术大学工程科学学院仪器科学与技术（机器人方向）博士研究生，隶属于中国科学技术大学工程科学学院精密机械与精密仪器系、人形机器人研究院、深空探测实验室，所在实验室为中国科大仿生智能实验室BIR-Lab，导师为董二宝副教授。研究方向为人形机器人（仿人灵巧手）、灵巧操作、仿生软体机器人与人工肌肉。</b><br>
                 &emsp;&emsp;本网站用于记录我的科研、学习与生活，欢迎交流！`,

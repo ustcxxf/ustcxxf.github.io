@@ -53,7 +53,14 @@
             { icon: "fas fa-robot", title: "机器人学", items: [] },
             { icon: "fas fa-sync", title: "控制", items: [] },
             { icon: "fas fa-project-diagram", title: "算法", items: [] },
-            { icon: "fas fa-code", title: "编程", items: [] },
+            {
+                icon: "fas fa-code",
+                title: "编程",
+                items: 
+                [
+                    { name: "Markdown 入门与模板", link: "markdown-intro.html" }
+                ]
+            },
             { icon: "fas fa-book", title: "基础学科", items: [] },
             { icon: "fas fa-pen-nib", title: "论文写作", items: [] }
         ];
@@ -73,9 +80,16 @@
                 const ul = document.createElement('ul');
                 if (category.items.length > 0) {
                     category.items.forEach(item => {
-                        const li = document.createElement('li');
+                         const li = document.createElement('li');
+                    if (typeof item === 'string') {
                         li.textContent = item;
-                        ul.appendChild(li);
+                    } else if (typeof item === 'object' && item.name && item.link) {
+                        const a = document.createElement('a');
+                        a.href = item.link;
+                        a.textContent = item.name;
+                        li.appendChild(a);
+                    }
+                    ul.appendChild(li);
                     });
                 } else {
                     // 如果没有子项，可以显示“暂无内容”或保持空白

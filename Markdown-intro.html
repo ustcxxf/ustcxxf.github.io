@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>笔记模板</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Jin Chai\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.18\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+/* 表格居中 */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  display: table;
+  border-collapse: collapse;
+}
+.center {
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><html><head><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body></body></html>
+    </head>
+    <body for="html-export" >
+      <div class="crossnote markdown-preview  "  >
+
+      <a href="./files/Markdown-template.md" download>点击下载此模板的Markdown文件</a>
+
+      <html><head></head><body><div>
+<font face="华文楷体">
+<div align="center">
+  <span style="font-size:40px; font-weight:bold;">Markdown笔记模板</span>
+</div>
+<div align="center">
+  <span style="font-size:25px; font-weight:bold;">柴琎 BA23009016</span>
+</div>
+ <center><font size="5"></font></center>
+ <center><font size="4">中国科学技术大学 仿生智能机器人实验室BIR-Lab</font></center>
+<center><font size="5">2025.08.02</font></center>
+<blockquote>
+<p>📌 学习使用Markdown的基本功能</p>
+
+</blockquote>
+<div align="center">
+  <span style="font-size:40px; font-weight:bold;">
+  <center><font face="黑体" size="5">目录
+  </font></center></span>
+</div>
+<ul>
+<li><a href="#%E4%B8%80%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">一、准备工作</a></li>
+<li><a href="#%E4%BA%8C%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">二、基本语法</a></li>
+<li><a href="#%E4%B8%89%E5%85%B6%E4%BB%96%E6%93%8D%E4%BD%9C">三、其他操作</a></li>
+<li><a href="#%E5%9B%9B%E5%AF%BC%E5%87%BA%E4%B8%BApdf%E6%96%87%E6%A1%A3">四、导出为PDF文档</a></li>
+<li><a href="#%E4%BA%94%E8%A1%A5%E5%85%85">五、补充</a></li>
+<li><a href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99">参考资料</a></li>
+</ul>
+<hr>
+<h2 id="一-准备工作">一、准备工作 </h2>
+<ol>
+<li><strong>安装VSCode</strong></li>
+<li><strong>下载必要的插件</strong>
+<ul>
+<li>Markdown All in One</li>
+<li>Markdown Preview Enhanced</li>
+<li>Markdown PDF</li>
+<li>Paste Image</li>
+</ul>
+</li>
+<li>创建.md文档，打开同步预览功能，开始编辑</li>
+</ol>
+<h2 id="二-基本语法">二、基本语法 </h2>
+<ol>
+<li><strong>标题</strong><br>
+#一级标题（井号后有空格）<br>
+##二级标题<br>
+...</li>
+<li><strong>引用</strong></li>
+</ol>
+<blockquote>
+<p>编辑Markdown很好玩！（似乎比Latex更友好的样子）</p>
+<blockquote>
+<p>引用的嵌套</p>
+</blockquote>
+</blockquote>
+<ol start="3">
+<li>
+<p><strong>列表</strong></p>
+<ol>
+<li>无序列表与嵌套</li>
+</ol>
+<ul>
+<li>列表1（横杠）</li>
+</ul>
+<ul>
+<li>列表2（星号）</li>
+</ul>
+<ul>
+<li>列表3（加号）
+<ul>
+<li>嵌套1
+<ul>
+<li>嵌套2</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>有序列表（带数字）</li>
+<li>有序列表嵌套
+<ol>
+<li>嵌套2</li>
+</ol>
+</li>
+<li>TodoList</li>
+</ol>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> a</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked=""> b</li>
+</ul>
+</li>
+<li>
+<p><strong>表格</strong></p>
+<ul>
+<li>用Markdown写表格</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:center">居中对齐</th>
+<th style="text-align:right">右对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">a</td>
+<td style="text-align:center">b</td>
+<td style="text-align:right">c</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>用Html写表格<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></li>
+</ul>
+</li>
+</ol>
+<div class="center">
+<table>
+  <thead>
+    <tr>
+      <th>列标题1</th>
+      <th>列标题2</th>
+      <th>列标题3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>行1，列1</td>
+      <td>行1，列2</td>
+      <td>行1，列3</td>
+    </tr>
+    <tr>
+      <td>行2，列1</td>
+      <td>行2，列2</td>
+      <td>行2，列3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<ol>
+<li>
+<p><strong>段落</strong></p>
+<ul>
+<li>换行？——两个以上空格后回车/空一个行</li>
+<li>分割线——三个*</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>字体</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">字体</th>
+<th style="text-align:center">代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>斜体</em></td>
+<td style="text-align:center">* *</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>粗体</strong></td>
+<td style="text-align:center">** **</td>
+</tr>
+<tr>
+<td style="text-align:center"><mark>高亮</mark></td>
+<td style="text-align:center">== ==</td>
+</tr>
+<tr>
+<td style="text-align:center"><em><strong>粗斜体</strong></em></td>
+<td style="text-align:center">*** ***</td>
+</tr>
+<tr>
+<td style="text-align:center"><s>删除</s></td>
+<td style="text-align:center">~~ ~~</td>
+</tr>
+<tr>
+<td style="text-align:center"><u>下划线</u></td>
+<td style="text-align:center"><code>&lt;u&gt; &lt;/u&gt;</code></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>脚注<br>
+本教程链接<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>来自<a href="https://www.bilibili.com/video/BV1bK4y1i7BY/?share_source=copy_web&amp;vd_source=1b7c7c358b36a96a651458ed336203c2">B站视频</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>代码</strong></p>
+<ol>
+<li>多行代码</li>
+</ol>
+<pre data-role="codeBlock" data-info="C++" class="language-cpp C++"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token keyword keyword-using">using</span> <span class="token keyword keyword-namespace">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Hello world!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><ol start="2">
+<li>单行代码<br>
+<code>print("Hello world!");</code></li>
+</ol>
+</li>
+<li>
+<p><strong>超链接</strong></p>
+<ul>
+<li><a href="https://www.runoob.com/markdown/md-tutorial.html">更多使用教程参考菜鸟教程-Markdown</a></li>
+<li><a href="https://www.runoob.com/">更多其他语言等教程（菜鸟教程）</a></li>
+</ul>
+</li>
+<li>
+<p><strong>图片</strong><br>
+<img src="file:///e:\Jin Chai_Laboratory\学习资料\学习ing\markdowntest.jpg" alt="picture_test"></p>
+</li>
+</ol>
+<center><font size="3"><b>图1</b> 用<b>Markdown</b>插入图片</font></center>
+<center><img src="file:///e:\Jin Chai_Laboratory\学习资料\学习ing\markdowntest.jpg" alt="picture_test" width="75%"></center>
+<center><font size="3"><b>图2</b> 用<b>Html</b>插入图片并调整图片大小</font></center>
+<h2 id="三-其他操作">三、其他操作 </h2>
+<ol>
+<li><strong>插入latex公式</strong>
+<ul>
+<li>行内显示公式<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">f(x)=ax^2+bx+c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">a</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">b</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span></li>
+<li>块内显示公式<br>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo fence="true">{</mo><mtable rowspacing="0.16em" columnalign="center center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>a</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>b</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>c</mi></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>d</mi></mstyle></mtd></mtr></mtable><mo fence="true">}</mo></mrow><annotation encoding="application/x-tex">\begin{Bmatrix}
+  a &amp; b\\
+  c &amp; d 
+  \end{Bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">{</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">a</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">b</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">}</span></span></span></span></span></span></span></li>
+</ul>
+</li>
+<li><strong>html/css语法</strong><sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>
+<ul>
+<li><strong>Ctrl+Shift+P搜索</strong><br>
+"Markdown Preview Enhanced: Customize Css"</li>
+<li>缩进与空格<code>&amp;emsp;</code>：插入空格或者在文本开头用于缩进 注意不要忘记分号</li>
+<li>居中：
+<ul>
+<li>格式1：<code>&lt;center&gt;内容&lt;/center&gt; </code></li>
+<li>格式2：<code>&lt;p align=center&gt;内容&lt;/p&gt; </code></li>
+<li>格式3：<code>&lt;div align=center&gt;内容&lt;/div&gt;</code></li>
+</ul>
+</li>
+<li>字体颜色、大小、字体类型：<code>&lt;font color="" size=6 face=""&gt;字体颜色、大小、字体类型&lt;/font&gt;</code></li>
+<li>图片：<code>&lt;img src="url" width="400" height="400" alt="" title="" style="50%;"/&gt;</code>
+<ul>
+<li>src：该图片的网址</li>
+<li>alt：是图片没有加载成功时，显示的文字</li>
+<li>title：该图片的标题</li>
+<li>style：设置缩放</li>
+</ul>
+</li>
+<li>空白行：
+<ul>
+<li>格式1（使用块标签，撑开一行，如p、div）：<code>&lt;p&gt;&lt;/p&gt;</code>/<code>&lt;div&gt;&lt;/div&gt; </code></li>
+<li>格式2（ 简单点的方法，就直接使用 br 标签）：<code>内容1&lt;br/&gt;&lt;br/&gt;内容2</code></li>
+</ul>
+</li>
+<li>...进一步到<a href="https://www.runoob.com/html/html-tutorial.html">菜鸟教程-HTML</a>中学习</li>
+</ul>
+</li>
+<li><strong>个性化设置</strong><br>
+File-Preference-Settings</li>
+</ol>
+<h2 id="四-导出为pdf文档">四、导出为PDF文档 </h2>
+<ol>
+<li>使用Markdown PDF(不推荐)
+<ol>
+<li>表格无法在中间显示</li>
+<li>公式也无法显示（仍未Latex公式样子）</li>
+</ol>
+</li>
+<li><strong>在预览窗口右键点击选择Open in Browser - 再手动另存为PDF</strong></li>
+</ol>
+<h2 id="五-补充">五、补充 </h2>
+<ul>
+<li>其他参考教程<a href="https://www.bilibili.com/video/BV1JA411h7Gw/?share_source=copy_web&amp;vd_source=1b7c7c358b36a96a651458ed336203c2">使用Stackedit网页端【8分钟让你快速掌握Markdown】</a>。</li>
+</ul>
+<h2 id="centerfont参考资料fontcenter"><center><font>参考资料</font></center> </h2>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>[Markdown预览使表格居中的方法]<a href="https://zhuanlan.zhihu.com/p/66321296">https://zhuanlan.zhihu.com/p/66321296</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>[全网最详细Markdown入门使用教程-40分钟教会你用免费的vscode做出好看的笔记] <a href="https://www.bilibili.com/video/BV1bK4y1i7BY/?share_source=copy_web&amp;vd_source=1b7c7c358b36a96a651458ed336203c2">https://www.bilibili.com/video/BV1bK4y1i7BY/?share_source=copy_web&amp;vd_source=1b7c7c358b36a96a651458ed336203c2</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>[Markdown使用技巧总结——缩进，空格，字体，颜色，字号，图片等]<a href="https://zhuanlan.zhihu.com/p/271394570">https://zhuanlan.zhihu.com/p/271394570</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</font></div></body></html>
+      </div>
+      
+      
+    </body>
+    
+    
+    
+    
+    
+  </html>
